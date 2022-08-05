@@ -1,0 +1,3 @@
+Clonato da https://github.com/pplonski/python-dashboard
+
+URL: https://mljar.com/blog/python-dashboard/
