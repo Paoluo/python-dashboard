@@ -9,3 +9,14 @@ virtualenv pdenv --python=python3.8
 source pdenv/bin/activate
 # install all packages
 pip install -r requirements.txt
+
+# The important step is to add our virtual environment as a kernel in the Jupyter Notebook:
+python -m ipykernel install --user --name=pdenv
+# After executing the above command, the pdenv will be available as a kernel in the Jupyter Notebook.
+
+# All data will be fetched during notebook execution. Please start the Jupyter Notebook:
+# cliccando sul link si apre direttmente sul chrome della macchina host 
+jupyter notebook --allow-root
+
+# switchare il kernel sul notebook dopo l'apertura del pdenv.ipynb
+
