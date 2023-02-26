@@ -7,17 +7,17 @@ URL da cui partire per demo e istruzioni: https://mljar.com/blog/python-dashboar
 # Creazione Environment
 virtualenv pdenv --python=python3.8
 
-# activate the env
+# STEP1. activate the env
 source pdenv/bin/activate
 # install all packages
 pip install -r requirements.txt
 
-# The important step is to add our virtual environment as a kernel in the Jupyter Notebook:
+# STEP2. The important step is to add our virtual environment as a kernel in the Jupyter Notebook:
 python -m ipykernel install --user --name=pdenv
 # After executing the above command, the pdenv will be available as a kernel in the Jupyter Notebook.
 
 # All data will be fetched during notebook execution. Please start the Jupyter Notebook:
-# cliccando sul link si apre direttmente sul chrome della macchina host 
+# STEP3. cliccando sul link si apre direttmente sul chrome della macchina host 
 jupyter notebook --allow-root
 
 # switchare il kernel sul notebook dopo l'apertura del pdenv.ipynb
@@ -25,9 +25,14 @@ jupyter notebook --allow-root
 # per notificare email sono stati posti valori di configurazione nel file .ENV
 
 
-# To see the notebook as a web application, you need to run the Mercury server. Please use the command:
+# STEP4. To see the notebook as a web application, you need to run the Mercury server. Please use the command:
 mercury run
 
 # Automaticamente crea le pagine web per i notebook file presenti nel folder corrente!!! E rende fruibile le app all'indirizzo http://127.0.0.1:8000/
 
 # L'intestazione iniziale dei file fissa la configurazione YAML per il framework YAML che provvede a creare automaticamente le pagine web interattive e schedulate.
+
+# Lasciate attive diverse dashboard per mercury:
+# 1. dashboard - Dashboard originale con notifiche all'email personale, con Stock, Crypto e Meteo
+# 2. (WIP) pdenv - dashboard da personalizzare con le Crypto di Binance preferite da monitorare.
+# 3. (TODO) meteo - dashboard per monitorare le condizioni meteo di diverse CITTA'
