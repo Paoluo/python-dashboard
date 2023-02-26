@@ -1,4 +1,11 @@
 Clonato da https://github.com/pplonski/python-dashboard
 
-URL: https://mljar.com/blog/python-dashboard/
-...
+URL da cui partire per demo e istruzioni: https://mljar.com/blog/python-dashboard/
+
+# Creazione Environment
+virtualenv pdenv --python=python3.8
+
+# activate the env
+source pdenv/bin/activate
+# install all packages
+pip install -r requirements.txt
