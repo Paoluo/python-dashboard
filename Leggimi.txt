@@ -1,5 +1,7 @@
 Clonato da https://github.com/pplonski/python-dashboard
 
+# Python Interactive window  https://code.visualstudio.com/docs/python/jupyter-support-py
+
 URL da cui partire per demo e istruzioni: https://mljar.com/blog/python-dashboard/
 
 # Creazione Environment
@@ -20,3 +22,4 @@ jupyter notebook --allow-root
 
 # switchare il kernel sul notebook dopo l'apertura del pdenv.ipynb
 
+per notifica email posti valori di configurazione nel file .ENV
