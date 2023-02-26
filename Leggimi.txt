@@ -22,4 +22,12 @@ jupyter notebook --allow-root
 
 # switchare il kernel sul notebook dopo l'apertura del pdenv.ipynb
 
-per notifica email posti valori di configurazione nel file .ENV
+# per notificare email sono stati posti valori di configurazione nel file .ENV
+
+
+# To see the notebook as a web application, you need to run the Mercury server. Please use the command:
+mercury run
+
+# Automaticamente crea le pagine web per i notebook file presenti nel folder corrente!!! E rende fruibile le app all'indirizzo http://127.0.0.1:8000/
+
+# L'intestazione iniziale dei file fissa la configurazione YAML per il framework YAML che provvede a creare automaticamente le pagine web interattive e schedulate.
