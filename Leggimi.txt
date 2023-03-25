@@ -3,6 +3,8 @@ Clonato da https://github.com/pplonski/python-dashboard
 # Python Interactive window  https://code.visualstudio.com/docs/python/jupyter-support-py
 
 URL da cui partire per demo e istruzioni: https://mljar.com/blog/python-dashboard/
+URL per imparare Mercury (il convertitore di JPYNB in pagine web): https://mljar.com/mercury/
+
 
 # Creazione Environment
 virtualenv pdenv --python=python3.8
@@ -35,4 +37,21 @@ mercury run
 # Lasciate attive diverse dashboard per mercury:
 # 1. dashboard - Dashboard originale con notifiche all'email personale, con Stock, Crypto e Meteo
 # 2. (WIP) pdenv - dashboard da personalizzare con le Crypto di Binance preferite da monitorare.
+#   2.1. Convertire il notebook in un gestore di un array di crypto valute da monitorare che poi convertite con Mercury consenta di scegliere quali monitorare puntualmente.
+#   2.2. Possibilità di selezionare da una lista dinamica di crypto valute e non statica
+#   2.3. Applicare algoritmo di valutazione quanto si rende potenzialmente utile acquistare o vendere.
+#   2.4. Creare una struttura oggetto che contenga i dati da visualizzare nonchè i costrutti di funzione per il plotting in un approccio ad oggetti del dato
+        - Oggetto Crypto
+            - data
+            - crypto_symbol
+            - interval
+            - limit
+            - date_creation
+            
+            Function:
+            - plot
+            - subplot
+            - plot_compare
+            - refresh_data (riscarica dati aggiornati da Binance)
+
 # 3. (TODO) meteo - dashboard per monitorare le condizioni meteo di diverse CITTA'
