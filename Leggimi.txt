@@ -41,17 +41,19 @@ mercury run
 #   2.2. Possibilità di selezionare da una lista dinamica di crypto valute e non statica
 #   2.3. Applicare algoritmo di valutazione quanto si rende potenzialmente utile acquistare o vendere.
 #   2.4. Creare una struttura oggetto che contenga i dati da visualizzare nonchè i costrutti di funzione per il plotting in un approccio ad oggetti del dato
-        - Oggetto Crypto
+        - (WIP) Oggetto Crypto
+            Attributes
             - data
             - crypto_symbol
             - interval
             - limit
             - date_creation
-            
+            - date_refresh
             Function:
-            - plot
-            - subplot
+            - (WIP) plot
+            - (OK) subplot
             - plot_compare
-            - refresh_data (riscarica dati aggiornati da Binance)
-
+            - (OK) refresh_data (riscarica dati aggiornati da Binance)
+#   2.5 Creata lista di crypto tra symbol src e trg
+#       - da introdurre utilizzo dinamico nella fasi successive
 # 3. (TODO) meteo - dashboard per monitorare le condizioni meteo di diverse CITTA'
